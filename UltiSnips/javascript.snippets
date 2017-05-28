@@ -40,3 +40,26 @@ endsnippet
 snippet ex
 export ${1:default} ${2:bar}
 endsnippet
+
+# Class extends Components
+snippet componentclass
+class ${1:class} extends Component {
+	render() {
+		return();
+	}
+}
+endsnippet
+
+# mapStateToProps function
+snippet mapdispatch
+function mapStateToProps(state) {
+	return { ${1} };
+}
+endsnippet
+
+# mapDispatchToProps function
+snippet mapdispatch
+function mapDispatchToProps(state) {
+	return bindActionCreators({ ${1} }, dispatch);
+}
+endsnippet
